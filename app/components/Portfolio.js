@@ -13,28 +13,28 @@ const Portfolio = () => {
       id: 1,
       title: 'Data Visualization Dashboard',
       description: 'An interactive dashboard for visualizing complex datasets using React and D3.js.',
-      imageUrl: 'https://via.placeholder.com/400x300',
+      imageUrl: '/project1.jfif',
       tags: ['React', 'D3.js', 'Data Visualization']
     },
     {
       id: 2,
       title: 'Machine Learning API',
       description: 'A REST API for machine learning model predictions using Python, Flask, and TensorFlow.',
-      imageUrl: 'https://via.placeholder.com/400x300',
+      imageUrl: '/project .2.jfif',
       tags: ['Python', 'Flask', 'TensorFlow']
     },
     {
       id: 3,
       title: 'E-commerce Analytics Platform',
       description: 'Real-time analytics platform for e-commerce businesses to track sales and customer behavior.',
-      imageUrl: 'https://via.placeholder.com/400x300',
+      imageUrl: '/project .3.jfif',
       tags: ['Node.js', 'MongoDB', 'Chart.js']
     },
     {
       id: 4,
       title: 'IoT Data Processing System',
       description: 'A system for collecting, processing, and analyzing data from IoT devices.',
-      imageUrl: 'https://via.placeholder.com/400x300',
+      imageUrl: '/project .4.jfif',
       tags: ['Kafka', 'Spark', 'Python']
     }
   ];
@@ -92,12 +92,13 @@ const Portfolio = () => {
               whileHover={{ y: -10 }}
             >
               <div className="relative h-48 w-full">
-                <div className="absolute inset-0 bg-blue-100 flex items-center justify-center">
-                  <div className="text-center">
-                    <span className="text-4xl text-blue-600 block mb-2">{project.id}</span>
-                    <span className="text-gray-900 text-lg font-medium">{project.title}</span>
-                  </div>
-                </div>
+                <Image
+                  src={project.imageUrl}
+                  alt={project.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{ objectFit: "cover" }}
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">{project.title}</h3>
