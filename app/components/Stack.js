@@ -96,7 +96,7 @@ const Stack = () => {
           {stackCategories.map((stackCategory, index) => (
             <motion.div
               key={index}
-              className="bg-gray-50 rounded-lg p-6 shadow-md"
+              className="bg-gray-50 border-2 border-gray-300 rounded-lg p-6 shadow-[0_5px_15px_rgba(0,0,0,0.2)] hover:shadow-[0_10px_25px_rgba(0,0,0,0.25)] transition-all"
               variants={categoryVariants}
             >
               <h3 className="text-xl font-semibold mb-4 text-blue-700">{stackCategory.category}</h3>

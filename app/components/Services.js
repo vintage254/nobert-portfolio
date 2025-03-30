@@ -94,11 +94,11 @@ const Services = () => {
           {services.map((service) => (
             <motion.div
               key={service.id}
-              className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow"
+              className="bg-white border-2 border-gray-300 rounded-lg p-8 shadow-[0_5px_15px_rgba(0,0,0,0.2)] hover:shadow-[0_10px_25px_rgba(0,0,0,0.25)] transition-all"
               variants={itemVariants}
               whileHover={{ y: -5, scale: 1.02 }}
             >
-              <div className="text-4xl mb-4">{service.icon}</div>
+              <div className="text-4xl mb-4 bg-blue-50 h-16 w-16 flex items-center justify-center rounded-full mx-auto md:mx-0 border border-blue-200">{service.icon}</div>
               <h3 className="text-xl font-semibold mb-3 text-gray-900">{service.title}</h3>
               <p className="text-gray-800">{service.description}</p>
             </motion.div>

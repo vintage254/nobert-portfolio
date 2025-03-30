@@ -116,7 +116,7 @@ const Contact = () => {
                 href={link.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                className="flex items-center p-6 bg-white border-2 border-gray-300 rounded-lg shadow-[0_5px_15px_rgba(0,0,0,0.2)] hover:shadow-[0_10px_25px_rgba(0,0,0,0.25)] transition-all"
                 variants={itemVariants}
                 whileHover={{ y: -5, scale: 1.02 }}
               >
@@ -132,7 +132,7 @@ const Contact = () => {
           </div>
 
           <motion.div
-            className="mt-16 p-8 bg-white rounded-lg shadow-md"
+            className="mt-16 p-8 bg-white border-2 border-gray-300 rounded-lg shadow-[0_5px_15px_rgba(0,0,0,0.2)]"
             variants={itemVariants}
           >
             <h3 className="text-2xl font-semibold mb-6 text-center text-gray-900">Send Me a Message</h3>

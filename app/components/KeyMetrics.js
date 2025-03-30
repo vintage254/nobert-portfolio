@@ -119,7 +119,7 @@ const KeyMetrics = () => {
           {metrics.map((metric, index) => (
             <motion.div
               key={index}
-              className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center"
+              className="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-lg p-8 text-center shadow-[0_5px_15px_rgba(0,0,0,0.3)]"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
             >
