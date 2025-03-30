@@ -13,7 +13,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h1 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900"
             variants={{
               hidden: { opacity: 0 },
               visible: { opacity: 1 }
@@ -25,7 +25,7 @@ const Hero = () => {
             Nobert Kanini Kipkeretich
           </motion.h1>
           <motion.h2 
-            className="text-2xl md:text-3xl lg:text-4xl text-blue-600 mb-6"
+            className="text-2xl md:text-3xl lg:text-4xl text-blue-600 mb-6 font-semibold"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -33,20 +33,21 @@ const Hero = () => {
             Data & Software Engineer
           </motion.h2>
           <motion.p 
-            className="text-lg text-gray-600 mb-8 max-w-md mx-auto md:mx-0"
+            className="text-lg text-gray-800 mb-8 max-w-md mx-auto md:mx-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
             Building innovative solutions with data and code.
           </motion.p>
-          <motion.button
-            className="px-6 py-3 bg-blue-600 text-white rounded-md shadow-md hover:bg-blue-700 transition-colors"
+          <motion.a
+            href="#portfolio"
+            className="inline-block px-6 py-3 bg-blue-600 text-white rounded-md shadow-md hover:bg-blue-700 transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             View Portfolio
-          </motion.button>
+          </motion.a>
         </motion.div>
         
         <motion.div 
