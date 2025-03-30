@@ -45,7 +45,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <motion.div 
-          className="text-xl font-bold"
+          className="text-xl font-bold text-gray-900"
           whileHover={{ scale: 1.05 }}
           transition={{ type: 'spring', stiffness: 300 }}
         >
@@ -57,7 +57,7 @@ const Navbar = () => {
             <motion.div key={link.name} whileHover={{ scale: 1.1 }}>
               <Link 
                 href={link.href}
-                className="text-gray-800 hover:text-gray-600 transition-colors"
+                className="text-gray-900 hover:text-gray-600 transition-colors font-medium"
                 onClick={closeMobileMenu}
               >
                 {link.name}
@@ -68,7 +68,7 @@ const Navbar = () => {
         
         <div className="md:hidden">
           <button 
-            className="text-gray-800 p-2 focus:outline-none"
+            className="text-gray-900 p-2 focus:outline-none"
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
           >
@@ -114,7 +114,7 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-gray-800 hover:text-gray-600 transition-colors py-2"
+                  className="text-gray-900 hover:text-gray-600 transition-colors py-2 font-medium"
                   onClick={closeMobileMenu}
                 >
                   {link.name}

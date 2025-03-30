@@ -97,8 +97,8 @@ const Contact = () => {
           className="text-center mb-16"
           ref={ref}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Get In Touch</h2>
+          <p className="text-gray-800 max-w-2xl mx-auto">
             Interested in working together? Feel free to reach out through any of the channels below.
           </p>
         </motion.div>
@@ -124,8 +124,8 @@ const Contact = () => {
                   {link.icon}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">{link.name}</h3>
-                  <p className="text-gray-600">{link.label}</p>
+                  <h3 className="font-semibold text-lg text-gray-900">{link.name}</h3>
+                  <p className="text-gray-800">{link.label}</p>
                 </div>
               </motion.a>
             ))}
@@ -135,51 +135,51 @@ const Contact = () => {
             className="mt-16 p-8 bg-white rounded-lg shadow-md"
             variants={itemVariants}
           >
-            <h3 className="text-2xl font-semibold mb-6 text-center">Send Me a Message</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-center text-gray-900">Send Me a Message</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-gray-700 mb-2">Name</label>
+                  <label htmlFor="name" className="block text-gray-800 mb-2 font-medium">Name</label>
                   <input
                     type="text"
                     id="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                     placeholder="Your name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
+                  <label htmlFor="email" className="block text-gray-800 mb-2 font-medium">Email</label>
                   <input
                     type="email"
                     id="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                     placeholder="Your email"
                   />
                 </div>
               </div>
               <div>
-                <label htmlFor="subject" className="block text-gray-700 mb-2">Subject</label>
+                <label htmlFor="subject" className="block text-gray-800 mb-2 font-medium">Subject</label>
                 <input
                   type="text"
                   id="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                   placeholder="Subject"
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
+                <label htmlFor="message" className="block text-gray-800 mb-2 font-medium">Message</label>
                 <textarea
                   id="message"
                   rows="5"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                   placeholder="Your message"
                 ></textarea>
               </div>
@@ -187,7 +187,7 @@ const Contact = () => {
                 href={getWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors flex items-center justify-center gap-2"
+                className="w-full py-3 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors flex items-center justify-center gap-2 font-medium"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -195,7 +195,7 @@ const Contact = () => {
                 <span>💬</span>
               </motion.a>
               
-              <div className="mt-2 text-center text-sm text-gray-500">
+              <div className="mt-2 text-center text-sm text-gray-700">
                 Message will be sent directly to my WhatsApp (+254 792 267262)
               </div>
             </form>

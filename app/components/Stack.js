@@ -81,8 +81,8 @@ const Stack = () => {
           className="text-center mb-16"
           ref={ref}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Tech Stack</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">My Tech Stack</h2>
+          <p className="text-gray-800 max-w-2xl mx-auto">
             These are the technologies, frameworks, and tools I specialize in.
           </p>
         </motion.div>
@@ -99,12 +99,12 @@ const Stack = () => {
               className="bg-gray-50 rounded-lg p-6 shadow-md"
               variants={categoryVariants}
             >
-              <h3 className="text-xl font-semibold mb-4 text-blue-600">{stackCategory.category}</h3>
+              <h3 className="text-xl font-semibold mb-4 text-blue-700">{stackCategory.category}</h3>
               <div className="flex flex-wrap gap-2">
                 {stackCategory.skills.map((skill, skillIndex) => (
                   <motion.span
                     key={skillIndex}
-                    className="px-3 py-1 bg-white border border-gray-200 text-gray-800 rounded-full text-sm"
+                    className="px-3 py-1 bg-white border border-gray-200 text-gray-800 rounded-full text-sm font-medium"
                     variants={skillVariants}
                     whileHover={{ scale: 1.05, backgroundColor: '#EBF4FF' }}
                   >

@@ -79,8 +79,8 @@ const Services = () => {
           className="text-center mb-16"
           ref={ref}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Services</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">My Services</h2>
+          <p className="text-gray-800 max-w-2xl mx-auto">
             I offer a range of services to help businesses leverage data and technology to solve complex problems.
           </p>
         </motion.div>
@@ -99,8 +99,8 @@ const Services = () => {
               whileHover={{ y: -5, scale: 1.02 }}
             >
               <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">{service.title}</h3>
+              <p className="text-gray-800">{service.description}</p>
             </motion.div>
           ))}
         </motion.div>

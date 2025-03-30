@@ -72,8 +72,8 @@ const Portfolio = () => {
           className="text-center mb-16"
           ref={ref}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Portfolio</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">My Portfolio</h2>
+          <p className="text-gray-800 max-w-2xl mx-auto">
             Here are some of the projects I've worked on that showcase my skills in data engineering and software development.
           </p>
         </motion.div>
@@ -94,14 +94,14 @@ const Portfolio = () => {
               <div className="relative h-48 w-full">
                 <div className="absolute inset-0 bg-blue-100 flex items-center justify-center">
                   <div className="text-center">
-                    <span className="text-4xl text-blue-500 block mb-2">{project.id}</span>
-                    <span className="text-blue-800 text-sm">{project.title}</span>
+                    <span className="text-4xl text-blue-600 block mb-2">{project.id}</span>
+                    <span className="text-gray-900 text-lg font-medium">{project.title}</span>
                   </div>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-gray-900">{project.title}</h3>
+                <p className="text-gray-800 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, index) => (
                     <span

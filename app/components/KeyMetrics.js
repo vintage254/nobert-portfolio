@@ -104,8 +104,8 @@ const KeyMetrics = () => {
           transition={{ duration: 0.6 }}
           ref={ref}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Key Metrics</h2>
-          <p className="max-w-2xl mx-auto opacity-90">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Key Metrics</h2>
+          <p className="max-w-2xl mx-auto text-white text-opacity-90">
             Numbers that reflect my professional journey and achievements.
           </p>
         </motion.div>
@@ -124,10 +124,10 @@ const KeyMetrics = () => {
               whileHover={{ scale: 1.05 }}
             >
               <div className="text-4xl mb-4">{metric.icon}</div>
-              <div className="text-4xl lg:text-5xl font-bold mb-2">
+              <div className="text-4xl lg:text-5xl font-bold mb-2 text-white">
                 {counts[index]}{metric.suffix}
               </div>
-              <div className="text-xl opacity-90">{metric.title}</div>
+              <div className="text-xl text-white text-opacity-90 font-medium">{metric.title}</div>
             </motion.div>
           ))}
         </motion.div>
