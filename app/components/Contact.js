@@ -47,7 +47,7 @@ const Contact = () => {
     {
       name: 'LinkedIn',
       icon: 'in',
-      link: 'https://linkedin.com/',
+      link: 'https://www.linkedin.com/in/nobert-kanini-127a28222/',
       label: 'LinkedIn Profile'
     },
     {
