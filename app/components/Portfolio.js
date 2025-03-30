@@ -20,21 +20,21 @@ const Portfolio = () => {
       id: 2,
       title: 'Machine Learning API',
       description: 'A REST API for machine learning model predictions using Python, Flask, and TensorFlow.',
-      imageUrl: '/project .2.jfif',
+      imageUrl: '/project%20.2.jfif',
       tags: ['Python', 'Flask', 'TensorFlow']
     },
     {
       id: 3,
       title: 'E-commerce Analytics Platform',
       description: 'Real-time analytics platform for e-commerce businesses to track sales and customer behavior.',
-      imageUrl: '/project .3.jfif',
+      imageUrl: '/project%20.3.jfif',
       tags: ['Node.js', 'MongoDB', 'Chart.js']
     },
     {
       id: 4,
       title: 'IoT Data Processing System',
       description: 'A system for collecting, processing, and analyzing data from IoT devices.',
-      imageUrl: '/project .4.jfif',
+      imageUrl: '/project%20.4.jfif',
       tags: ['Kafka', 'Spark', 'Python']
     }
   ];
