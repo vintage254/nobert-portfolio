@@ -8,7 +8,10 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
+    unoptimized: true,
   },
+  // Ensure trailing slashes are handled correctly for image paths
+  trailingSlash: false,
 };
 
 export default nextConfig;

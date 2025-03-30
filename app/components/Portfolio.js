@@ -1,40 +1,41 @@
 "use client";
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Image from 'next/image';
 
 const Portfolio = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const [imageError, setImageError] = useState({});
   
   const projects = [
     {
       id: 1,
       title: 'Data Visualization Dashboard',
       description: 'An interactive dashboard for visualizing complex datasets using React and D3.js.',
-      imageUrl: '/project1.jfif',
+      imageUrl: '/project1.jpg',
       tags: ['React', 'D3.js', 'Data Visualization']
     },
     {
       id: 2,
       title: 'Machine Learning API',
       description: 'A REST API for machine learning model predictions using Python, Flask, and TensorFlow.',
-      imageUrl: '/project2.jfif',
+      imageUrl: '/project2.jpg',
       tags: ['Python', 'Flask', 'TensorFlow']
     },
     {
       id: 3,
       title: 'E-commerce Analytics Platform',
       description: 'Real-time analytics platform for e-commerce businesses to track sales and customer behavior.',
-      imageUrl: '/project3.jfif',
+      imageUrl: '/project3.jpg',
       tags: ['Node.js', 'MongoDB', 'Chart.js']
     },
     {
       id: 4,
       title: 'IoT Data Processing System',
       description: 'A system for collecting, processing, and analyzing data from IoT devices.',
-      imageUrl: '/project4.jfif',
+      imageUrl: '/project4.jpg',
       tags: ['Kafka', 'Spark', 'Python']
     }
   ];
@@ -92,13 +93,21 @@ const Portfolio = () => {
               whileHover={{ y: -10 }}
             >
               <div className="relative h-48 w-full">
-                <Image
-                  src={project.imageUrl}
-                  alt={project.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  style={{ objectFit: "cover" }}
-                />
+                {imageError[project.id] ? (
+                  <div className="absolute inset-0 bg-blue-100 flex items-center justify-center">
+                    <div className="text-blue-800 text-lg font-medium">{project.title}</div>
+                  </div>
+                ) : (
+                  <Image
+                    src={project.imageUrl}
+                    alt={project.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    style={{ objectFit: "cover" }}
+                    priority
+                    onError={() => setImageError(prev => ({ ...prev, [project.id]: true }))}
+                  />
+                )}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">{project.title}</h3>
