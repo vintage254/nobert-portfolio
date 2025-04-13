@@ -22,6 +22,7 @@ const Navbar = () => {
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Services', href: '#services' },
     { name: 'Stack', href: '#stack' },
+    { name: 'Elevator Speech', href: '#elevator-speech' },
     { name: 'Key Metrics', href: '#key-metrics' },
     { name: 'Contact', href: '#contact' },
   ];
