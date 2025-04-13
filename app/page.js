@@ -13,6 +13,7 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
+      <ElevatorSpeech />
       <Portfolio />
       <Services />
       <Stack />

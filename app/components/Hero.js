@@ -55,17 +55,17 @@ const Hero = () => {
           className="md:w-1/2 flex justify-center"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-xl">
-            <div className="absolute inset-0 bg-blue-200 flex items-center justify-center">
-              <span className="text-6xl font-bold text-blue-600">NK</span>
+            <div className="absolute inset-0">
               <Image
                 src={profile}
                 alt="Profile"
-                width={200}
-                height={200}
+                width={320}
+                height={320}
                 className="w-full h-full object-cover"
+                priority
               />
             </div>
           </div>
