@@ -1,6 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import profile from '@/public/images/profile.png';
 
 const Hero = () => {
   return (
@@ -59,6 +60,13 @@ const Hero = () => {
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-xl">
             <div className="absolute inset-0 bg-blue-200 flex items-center justify-center">
               <span className="text-6xl font-bold text-blue-600">NK</span>
+              <Image
+                src={profile}
+                alt="Profile"
+                width={200}
+                height={200}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </motion.div>
